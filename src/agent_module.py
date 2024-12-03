@@ -64,7 +64,7 @@ def action_environment_aware(agent: AgentBase):
     summary.extend(summarize_items(functions, "\nGlobal Functions:"))
     summary.extend(summarize_items(modules, "\nGlobal Modules:"))
     summary.extend(summarize_items(variables, "\nGlobal Variables:"))
-    summary.extend(summarize_items(calsses, "\nGlobal Calsses:"))
+    summary.extend(summarize_items(calsses, "\nGlobal Classes:"))
     
     methods = inspect.getmembers(agent, inspect.ismethod)
     attributes = inspect.getmembers(agent, lambda x: not inspect.ismethod(x))
